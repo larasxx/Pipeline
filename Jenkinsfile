@@ -4,13 +4,6 @@ pipeline {
 
     // Define the stages of the pipeline
     stages {
-        stage('Checkout') {
-            steps {
-                echo "Checking out code from GitHub..."
-                // This will clone your repository
-                git 'https://github.com/larasxx/Pipeline.git'
-            }
-        }
         stage('Build') {
             steps {
                 echo "Building the project..."
